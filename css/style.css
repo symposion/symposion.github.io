@@ -995,3 +995,11 @@ a, a:hover,.topbar-right ul li a:hover, .accordion h4.ui-state-active, .toggle .
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7080B600,endColorstr=#7080B600);
 }
 
+h1, h2, h3, h4, h5, h6, .ui-tabs .ui-tabs-nav li,
+#title-wrapper h1, #main-menu li, #main-menu li span {
+  font-family: 'Cardo', serif;
+}
+
+#site-title {
+  width: 220px;
+}
