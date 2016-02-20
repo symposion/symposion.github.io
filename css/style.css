@@ -777,6 +777,12 @@ ol ol li {
 	margin: 10px auto 10px;
 }
 
+.body-right-image {
+  float:right;
+  margin-left:20px;
+  margin-bottom:20px;
+}
+
 .wp-caption, .wp-caption-text, .sticky, .gallery-caption, .bypostauthor {
 	outline: none;
 }
