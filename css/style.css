@@ -546,6 +546,10 @@ h6 {
 	font-weight: bold;
 }
 
+b {
+  font-weight: bold;
+}
+
 blockquote {
 	border-left: 7px solid;
 	padding: 0 0 0 20px;
@@ -777,10 +781,11 @@ ol ol li {
 	margin: 10px auto 10px;
 }
 
-.body-right-image {
-  float:right;
-  margin-left:20px;
-  margin-bottom:20px;
+.body-centre-image {
+  margin-top: 10px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
 }
 
 .wp-caption, .wp-caption-text, .sticky, .gallery-caption, .bypostauthor {
