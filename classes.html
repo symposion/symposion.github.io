@@ -26,6 +26,12 @@
 
     <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
 
+    <script>
+        function showMailingPopUp() {
+            require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"f931fd9d579362a3af8f16269","lid":"a372e872ed"}) });
+            document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        }
+    </script>
     <!-- END head -->
 </head>
 
@@ -84,7 +90,7 @@
                 In addition, we will soon be offering half-day and full-day vinyasa flow and yin yoga workshops.</p>
 
             <p>To be kept up to date about new classes and workshops in Las Alpujarras we will be offering soon you can
-                <a href="#" id="open-popup">join our mailing list</a> and for extra updates you can also
+                <a href="#" onclick="showMailingPopUp(); return false;">join our mailing list</a> and for extra updates you can also
                 follow our page on Facebook: <a href="https://www.facebook.com/marjariyogaspain">www.facebook.com/marjariyogaspain</a></p>
 
             <h3>Vinyasa Flow Yoga</h3>
@@ -150,14 +156,7 @@
 
 <script type="text/javascript" src="./js/scripts.js"></script>
 
-<script>
-    function showMailingPopUp() {
-        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"f931fd9d579362a3af8f16269","lid":"a372e872ed"}) });
-        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-    }
 
-    document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-</script>
 
 <!-- END body -->
 
