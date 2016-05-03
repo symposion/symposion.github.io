@@ -26,15 +26,6 @@
 
     <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
 
-    <script>
-        function showMailingPopUp() {
-            require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"f931fd9d579362a3af8f16269","lid":"a372e872ed"}) });
-            document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-        }
-
-        document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
-    </script>
-
     <!-- END head -->
 </head>
 
@@ -159,6 +150,14 @@
 
 <script type="text/javascript" src="./js/scripts.js"></script>
 
+<script>
+    function showMailingPopUp() {
+        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"f931fd9d579362a3af8f16269","lid":"a372e872ed"}) });
+        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    }
+
+    document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+</script>
 
 <!-- END body -->
 
