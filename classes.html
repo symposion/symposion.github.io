@@ -24,6 +24,17 @@
     <link rel="stylesheet" id="responsive-css" href="./css/responsive.css" type="text/css" media="all">
     <script type="text/javascript" src="./js/jquery.js"></script>
 
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+    <script>
+        function showMailingPopUp() {
+            require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"f931fd9d579362a3af8f16269","lid":"a372e872ed"}) });
+            document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        }
+
+        document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+    </script>
+
     <!-- END head -->
 </head>
 
@@ -78,26 +89,20 @@
                 Classes in Órgiva
             </h2>
 
-            <p>Classes take place every <b>Saturday morning, 10:30am - 12pm</b> in Blossom Centre, the hall to the
-                right-hand side of
-                restaurant Pizza 'n' Love (directions and a map can be found below).</p>
+            <p>We are taking a temporary break but classes will be recommencing soon once we have our new venue ready.
+                In addition, we will soon be offering half-day and full-day vinyasa flow and yin yoga workshops.</p>
 
-            <p>The price for the 90 minute class is <b>€6</b> per person. If you pay for 4 consecutive classes upfront then it's €20 (€5 per class). </p>
+            <p>To be kept up to date about new classes and workshops in Las Alpujarras we will be offering soon you can
+                <a id="open-popup">join our mailing list</a> and for extra updates you can also
+                follow our page on Facebook: <a href="https://www.facebook.com/marjariyogaspain">www.facebook.com/marjariyogaspain</a></p>
 
-            <p>Classes are Vinyasa Flow Yoga style. This is a flowing and dynamic style of yoga where each movement is
-                connected to the breath, a moving meditation, which can almost feel like a flowing dance. It's a really
-                beautiful style of yoga and the pace and poses can be adapted depending on the levels and needs of the
-                students in the class. Some classes will include pranayama (breath work).</p>
+            <h3>Vinyasa Flow Yoga</h3>
 
-            <p>I also hope to run some Yin Yoga classes later in 2016, so watch this space!</p>
+            <p>This is a flowing and dynamic style of yoga where each movement is connected to the breath, a moving meditation, which can almost feel like a flowing dance. It's a beautiful style of yoga and the pace and poses can be adapted depending on the levels and needs of the students in the class. Some classes take a specific focus; for example, arm balances, heart-openers or inversions, and other classes are a mixture for working all over the body. Some classes include pranayama (breath work) before final relaxation.</p>
 
-            <p>At present, I wont be taking any payment myself from running the classes. The price will cover the cost
-                of the hall hire and anything I make over that will be donated to local animal charities in Las
-                Alpujarras.</p>
+            <h3>Yin Yoga</h3>
 
-            <p>In addition, I am seeking a fire-fighting/bomberos charity to send donations to, to give something back
-                to those who risk their lives when putting out and controlling the dreadful forest fires. I would be
-                keen to hear from anyone who knows of any such charity. Please <a href="contact.html">contact me</a></p>
+            <p>The idea behind this style of yoga is to apply moderate stress to the connective tissues of the body (tendons, fascia, and ligaments), with the aim of increasing circulation in the joints and improving flexibility. Each pose is held for longer than in most other styles of yoga, and the use of props is encouraged to keep you comfortable. With so many 'Yang'-style yoga practices offered, and so much Yang energy in a lot of people's everyday lives, Yin Yoga helps to keep our Yin and Yang energy balanced. It is a more meditative approach to yoga and aims at cultivating awareness of inner silence, bringing to light a universal, interconnecting quality.</p>
 
             <h3>About me</h3>
 
