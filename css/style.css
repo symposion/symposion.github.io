@@ -5,26 +5,28 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 3em;
     text-align: center;
 
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 1.5em;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 1.3em;
 }
 
 p {
     margin: 5px 0 0;
+    font-family: 'Cuprum', sans-serif;
 }
 
 body {
     width: 100%;
-    background-image: url('../img/cocoa-beans-1850312_1920.jpg')
+    background-image: url('../img/cocoa-beans-1850312_1920.jpg');
+
 }
 
 .section {
@@ -47,6 +49,8 @@ body {
     margin-right: auto;
     margin-top: 20px;
     background-image: url(../img/paper-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.75);
     padding: 20px 7%;
     box-sizing: border-box;
@@ -58,4 +62,5 @@ body {
     margin-right:auto;
     margin-left: auto;
     width: 20%;
+    min-width: 100px;
 }
