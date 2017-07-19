@@ -20,13 +20,13 @@ h3 {
 
 p {
     margin: 5px 0 0;
-    font-family: 'Cuprum', sans-serif;
+
 }
 
 body {
     width: 100%;
     background-image: url('../img/cocoa-beans-1850312_1920.jpg');
-
+    font-family: 'Cuprum', sans-serif;
 }
 
 .section {
@@ -63,4 +63,12 @@ body {
     margin-left: auto;
     width: 20%;
     min-width: 100px;
+}
+
+#instafeed {
+    text-align: center;
+}
+
+#instafeed a {
+    margin: 5px;
 }

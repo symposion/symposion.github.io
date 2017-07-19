@@ -13,6 +13,10 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" type="text/css" media="all">
 
+
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+
+
 </head>
 <!-- BEGIN body -->
 <body>
@@ -42,6 +46,21 @@
             <a target="_blank" href="http://www.facebook.com/xocolatesmarjari">Facebook</a></p>
 
     </div>
+
+    <div id="instafeed" class="section">
+    </div>
 </div>
 </body>
+
+<script type="text/javascript">
+  var feed = new Instafeed({
+    get: 'user',
+    clientId: '6ba0686eac8446a7a26443400f6e2f4e',
+    accessToken: '3659468448.a0057f2.9077d6a8023f409e9f8a7c6ce3475f95',
+    userId: '3659468448',
+    template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
+  });
+  feed.run();
+</script>
+
 </html>
