@@ -57,6 +57,10 @@ body {
     border: thin solid chocolate;
 }
 
+.social-media-buttons {
+    text-align:right;
+}
+
 .logo {
     display:block;
     margin-right:auto;
